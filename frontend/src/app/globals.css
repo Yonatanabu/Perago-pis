@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.role-card {
+  transition: all 0.2s ease;
+}
+
+[data-mantine-color-scheme="light"] .role-card:hover {
+  background-color: #f8fafc;
+}
+
+[data-mantine-color-scheme="dark"] .role-card:hover {
+  background-color: var(--mantine-color-dark-6);
+}
+
+[data-mantine-color-scheme="light"] .role-card.active-role {
+  background-color: var(--mantine-color-blue-0);
+  border-color: var(--mantine-color-blue-5);
+  box-shadow: 0 0 0 1px var(--mantine-color-blue-5);
+}
+
+[data-mantine-color-scheme="dark"] .role-card.active-role {
+  background-color: var(--mantine-color-dark-5);
+  border-color: var(--mantine-color-blue-8);
+  box-shadow: 0 0 0 1px var(--mantine-color-blue-8);
+}
